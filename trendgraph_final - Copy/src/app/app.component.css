@@ -1,0 +1,15 @@
+#container{
+   border: 1px solid black;
+   width: 500px;
+   height: 500px;
+   margin: auto;
+   border-radius: 25px;
+   background-color:#F8F8F8 ;
+   padding:10px;
+   
+}
+#sample{
+    width: 100px;
+    height: 80px;
+    border: 0px solid black;
+}
