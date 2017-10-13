@@ -1,4 +1,4 @@
-#How to run?
+# How to run?
 
 - This is an angular cli project.
 - Before running this project, make sure you execute "npm install" to install all the dependencies.
