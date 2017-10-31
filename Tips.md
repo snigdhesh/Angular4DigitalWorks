@@ -1,7 +1,8 @@
 ### Some tips for angular
+**Tip 1**  
 - Use `ng serve --port 3000` to change port number temporarily on angular. Where `3000` is the desired port number.
 
-``## Requirements
+## Requirements
 1.Want to display link (blue underlined word).  
 2.But routing should be through angular routing.  
 
@@ -12,4 +13,4 @@
 
 to avoid this , you can use  
 
-`href="javascript:void(0);"`  ``
+`href="javascript:void(0);"`  
