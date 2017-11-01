@@ -16,7 +16,8 @@
 
 **Tip 3**
 <hr>
-### how to add observable response to an array?
+
+### How to add observable response to and array?
 
 **step 1**
 Just initialize and array like this  
