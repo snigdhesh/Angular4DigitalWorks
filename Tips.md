@@ -57,9 +57,9 @@ If you want to get a property that doesn't exist in local json object. You can t
         (res)=>{post.id=res.json().id;
 		        console.log(res.json().id);});
 
-**Approach 1**
-you can do    
-`posts:any = {title:"demo"}`
-or 
-**Approach 2**
+**Approach 1**  
+you can do     
+`posts:any = {title:"demo"}`  
+or  
+**Approach 2**  
 `post['id']=res.json().id`
