@@ -36,3 +36,26 @@ Assign response to this array like this.
 
 **source**
 https://stackoverflow.com/questions/42223382/angular-2-http-store-response-in-array
+
+**Tip 4**
+
+ - When you update using http.put method in angular, you can subscribe to the response and log it to console.  
+ - But you cannot see it in console, instead you need to go to "network" tab instead of console tab.
+ - Go to network > click on the request file listed on left side, then scroll down to find `request payload.` This is where you find the result.
+
+>If you want to get a property that doesn't exist in local json object. You can try two approaches.
+
+**Example**
+
+    `posts={title:"demo"};
+    
+        this.http.post(this.url,JSON.Stringify(post))
+        .subscribe(
+        (res)=>{post.id=res.json().id;
+		        console.log(res.json().id);});
+
+**Approach 1**
+you can do    
+`posts:any = {title:"demo"}`
+or 
+`post['id']=res.json().id`
