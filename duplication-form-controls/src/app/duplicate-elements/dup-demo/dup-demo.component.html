@@ -1,0 +1,39 @@
+<div class="container">
+  <form [formGroup]="dupForm">
+
+    <label for="">Show</label>
+    <input type="checkbox" formControlName="toggleDisplay"> 
+
+    
+
+        <div formArrayName="regex" *ngFor="let x of regExpressions.controls;let y=index">
+            <div [formGroupName]="y">     
+                <div class="row" *ngIf="show">      
+                     <div class="col-lg-3">
+                       <select class="form-control" formControlName="regexdropdown">
+                         <option *ngFor="let i of patterns" [value]="i.name">{{i.name}}</option>
+               
+                       </select>
+                     </div>
+                     <div class="col-lg-3">
+                       <input type="text" formControlName="regex" class="form-control" placeholder="Enter regular expression">
+                     </div>
+                     
+               
+                     <div class="col-lg-3">
+                       <i class="fa fa-minus-circle" aria-hidden="true" (click)="removeExpressions(y)" ></i>
+                       <i *ngIf="(y+1)==dupForm.get('regex').value.length" class="fa fa-plus-circle" aria-hidden="true" (click)="addExpressions()"></i>
+                     </div>
+                     <div class="col-lg-3"></div>
+           
+                   </div>
+                   
+
+        </div>
+
+      </div>
+      </form>
+      <div class="well">
+        {{dupForm.value | json}}
+      </div>
+</div>
