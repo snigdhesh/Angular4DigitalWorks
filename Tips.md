@@ -63,3 +63,14 @@ you can do
 or  
 **Approach 2**  
 `post['id']=res.json().id`
+
+**Tip 6**
+<hr>
+If you want to navigate to the same route again and again, you can work around.
+
+
+
+**Reference :**  Click here => [StackOverFlow](https://stackoverflow.com/questions/46385475/how-to-router-navigate-to-same-route-in-angular-4-and-catch-the-same-event)
+
+**Example**
+`this.router.navigate([..[somewhere else]..]).then(()=>{this.router.navigate(..back..)})`
