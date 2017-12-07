@@ -1,7 +1,7 @@
 # Updating angular cli to latest version. 
 ## Also see : updating local and global angular cli versions.
 
-
+<!-- 
 - After reading some issues reported on the GitHub repository, I found the solution.
 
 In order to update the angular-cli package installed globally in your system, you need to run:
@@ -19,4 +19,21 @@ Also, most likely you want to also update your local project version, because in
 `npm install`  
 
 
-source: [https://stackoverflow.com/questions/43931986/how-to-upgrade-angular-cli-to-the-latest-version]
+source: [https://stackoverflow.com/questions/43931986/how-to-upgrade-angular-cli-to-the-latest-version] -->
+
+
+Updating angular cli
+
+>>>global version
+
+npm install -g @angular/cli@latest
+(or)
+npm install -g @angular/cli@<version you want>
+ex: npm install -g @angular/cli@1.4.4
+
+>>>local version
+
+npm install --save-dev @angular/cli@latest
+(or)
+npm install --save-dev @angular/cli@<version you want>
+ex: npm install --save-dev @angular/cli@1.4.4
