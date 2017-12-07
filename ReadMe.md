@@ -27,13 +27,13 @@ Updating angular cli
 >>>global version
 
 npm install -g @angular/cli@latest
-(or)
-npm install -g @angular/cli@<version you want>
-ex: npm install -g @angular/cli@1.4.4
+(or)   
+npm install -g @angular/cli@<version you want>  
+ex: npm install -g @angular/cli@1.4.4  
 
 >>>local version
 
-npm install --save-dev @angular/cli@latest
-(or)
-npm install --save-dev @angular/cli@<version you want>
+npm install --save-dev @angular/cli@latest  
+(or)  
+npm install --save-dev @angular/cli@<version you want>  
 ex: npm install --save-dev @angular/cli@1.4.4
